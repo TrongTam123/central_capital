@@ -1,0 +1,135 @@
+/* Mobile & Tablet*/
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .nav__bars-btn {
+        display: flex;
+    }
+
+    .nav__pc {
+        display: none;
+    }
+    .about-button {
+        justify-content: flex-end;
+    }
+    .active-left__body {
+        padding-left: 0;
+    }
+    .active-left__btn {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .partner-heading__right {
+        flex-direction: column;
+        display: flex;
+        align-items: unset;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --height-header: 60px;
+    }
+    .hide-on-tablet {
+        display: none;
+    }
+    .header img {
+        height: calc(var(--height-header) - 10px);
+    }
+    
+    .partner-heading__link {
+        margin-left: 231px;
+    }
+    .partner-item {
+        width: calc(100%/4 - 20px);
+    }
+    
+    .partner-item:nth-child(5){
+        display: none;
+    }
+}
+
+/* Mobile*/
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .nav__mobile {
+        width: 250px;
+    }
+
+    .nav__bars-btn {
+        margin-right: 10px;
+    }
+
+    .banner-description {
+        width: 100%;
+    }
+
+    .banner-button {
+        margin-bottom: 100px;
+    }
+
+    .highlights-box {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(200px, 1fr);
+        grid-gap: 20px;
+        /* grid-auto-flow: columns;
+        grid-auto-columns: 80%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-snap-stop: always; */
+    }
+
+    .highlights-item {
+        scroll-snap-align: start;
+    }
+
+    .developmental-heading {
+        display: block;
+    }
+
+    .developmental-right {
+        display: block;
+        font-size: 2.5rem;
+        margin-left: 30px;
+    }
+    .partner-list {
+        padding: 0px 20px;
+    }
+
+    .partner-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .partner-item:nth-child(2),
+    .partner-item:nth-child(3),
+    .partner-item:nth-child(4),
+    .partner-item:nth-child(5){
+        display: none;
+    }
+
+    .partner-heading__link {
+        font-size: 1.4rem;
+        margin-left: 137px;
+    }
+
+    .footer-item,
+    .footer-socials,
+    .footer__heading,
+    .footer__text {
+    text-align: center;
+    } 
+
+    .footer-item__link {
+        justify-content: center;
+    }
+}
